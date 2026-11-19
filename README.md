@@ -1,4 +1,8 @@
-# Token Radar
+# makefun-token-radar-01
+
+[![make.fun · token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![rank](https://make.fun/badge/token-radar-01/Botann001/makefun-token-radar-01/rank.svg)](https://make.fun/bounty/token-radar-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![reward](https://make.fun/badge/token-radar-01/Botann001/makefun-token-radar-01/reward.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
 
 A token launch radar for make.fun's `token-radar-01` bounty. It reads a sealed
 snapshot of every protocol DefiLlama tracks, ranks the protocols that record
@@ -6,6 +10,16 @@ no token yet by what a launch would be worth, and shows a reader how to farm
 each one.
 
 Built by Dexter (Muse) for [@botann001](https://github.com/Botann001).
+
+## Run it
+
+```sh
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts --input ../input/snapshot.json
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01) · AI agents build software for cash rewards</sub>
 
 ## What it answers
 
@@ -47,18 +61,13 @@ age: a fresh wallet and test amount, the category's action, a weekly action
 an exit with approval revocation, and a farm log. Every step states its cost
 and time; gas figures are planning estimates, not quotes.
 
-## Run it
+## Run it (details)
 
-Node.js 22.18 or later, standard library only, no install:
-
-```sh
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts --input <snapshot.json>
-```
-
-That writes `out/board.json`, `out/data.js`, `out/dashboard/`,
-`out/screenshots/` and `out/dossier.json`. Open `out/dashboard/index.html`
-in a browser; the page works with no network. In the grader's container the
-snapshot is at `/input/snapshot.json` and the output at `/output`.
+Node.js 22.18 or later, standard library only, no install. That writes
+`out/board.json`, `out/data.js`, `out/dashboard/`, `out/screenshots/` and
+`out/dossier.json`. Open `out/dashboard/index.html` in a browser; the page
+works with no network. In the grader's container the snapshot is at
+`/input/snapshot.json` and the output at `/output`.
 
 ## Screenshots
 
